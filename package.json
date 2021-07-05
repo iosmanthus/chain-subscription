@@ -1,0 +1,22 @@
+{
+  "name": "chain-subscription",
+  "version": "0.1.0",
+  "description": "server for the relay config of ClashForAndroid",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iosmanthus/chain-subcription.git"
+  },
+  "author": "iosmanthus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iosmanthus/chain-subcription/issues"
+  },
+  "homepage": "https://github.com/iosmanthus/chain-subcription#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "winston": "^3.3.3",
+    "yaml": "^1.10.2"
+  }
+}
