@@ -52,6 +52,7 @@ app.get('/:subscription/:server/:port/:cipher/:password/:udp', async (req, res) 
         })
         config['proxy-groups'].push(select);
         config['proxy-groups'].push(relay);
+        config['proxies'].push(destServer);
         logger.info('successfully fetched config');
         res.send(yaml.stringify(config));
     } catch (err) {
