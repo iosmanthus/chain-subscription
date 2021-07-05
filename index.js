@@ -37,12 +37,12 @@ app.get('/:subscription/:server/:port/:cipher/:password/:udp', async (req, res) 
         const select = {
             name: 'Select',
             type: 'select',
-            proxies: config['proxies'].map(s => s.name)
+            proxies: ['Auto - UrlTest', ...config['proxies'].map(s => s.name)]
         };
         const relay = {
             name: 'Relay',
             type: 'relay',
-            proxies: [destServer.name, select.name, 'Auto - UrlTest']
+            proxies: [destServer.name, select.name]
         }
 
         config['proxy-groups'].forEach((value, index) => {
