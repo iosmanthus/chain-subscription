@@ -32,7 +32,7 @@ app.get('/:subscription/:server/:port/:cipher/:password/:udp', async (req, res) 
             port: params['port'],
             cipher: params['cipher'],
             password: params['password'],
-            udp: params['udp'],
+            udp: params['udp'] == "true",
         };
         const select = {
             name: 'Select',
