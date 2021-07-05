@@ -42,7 +42,7 @@ app.get('/:subscription/:server/:port/:cipher/:password/:udp', async (req, res) 
         const relay = {
             name: 'Relay',
             type: 'relay',
-            proxies: [destServer.name, select.name]
+            proxies: [destServer.name, select.name, 'Auto - UrlTest']
         }
 
         config['proxy-groups'].forEach((value, index) => {
